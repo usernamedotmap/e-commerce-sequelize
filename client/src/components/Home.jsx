@@ -1,3 +1,5 @@
+// HOME COMPONENT
+
 import React, { useEffect, useState } from "react";
 import { Plus, X } from "lucide-react";
 import { Modal, Box, Button, TextField } from "@mui/material";

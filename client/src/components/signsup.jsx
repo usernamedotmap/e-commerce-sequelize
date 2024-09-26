@@ -1,8 +1,10 @@
+// SIGNUP COMPONENT
+
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import '../styles/signupStyles.css'
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react";
 
 const Signup = () => {
