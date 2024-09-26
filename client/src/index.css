@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import './styles/signupStyles.css'
+
+.custom-h1 {
+    text-align: center !important;
+    color: pink !important;
+    font-size: 50px !important;
+}
+ .container {
+  position: relative !important;
+  overflow: hidden !important;
+  max-width: 600px !important;
+  margin: auto !important;
+}
+
+.custom-wrapper {
+  background: rgba(19, 35, 47, 0.9) !important; 
+  padding: 40px !important;
+  max-width: 500px !important;
+  margin: 40px auto !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.9) !important;
+}
+
+.switch-content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.switch-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.switch-content li {
+  width: 50%;
+  float: left;
+}
+
+.switch-content li input {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5 ease;
+color: white;
+}
+
+.switch-content .active input {
+  background: pink;
+  color: black;
+}
+
+.switch-content > div {
+  display: none;
+}
+
+.switch-content > div:first-child {
+  display: block;
+}
+
+label {
+  position: absolute;
+  transform: translateY(10px);
+  left: 20px;
+  color: floralwhite;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  font-size: 22px;
+  text-align: center;
+  bottom: 1px;
+  top: 10px;
+}
+
+input:focus + label,
+input:not(placeholder-shown) + label {
+    transform: translateY(-25px);
+    font-size: 16px;
+    color: pink
+}
+
+label.active {
+  transform: translateY(-40px);
+  left: 10px;
+  font-size: 25px;
+}
+
+label.highlight {
+  color: pink;
+}
+
+input,
+textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 1px solid #a0b3b0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  border-color: green;
+  font-size: 22px;
+}
+
+.top-signup {
+  position: relative;
+  align-items: center;
+  margin-top: 25px;
+  justify-content: center;
+  text-align: center;
+}
+
+.field-signup {
+  position: relative; /* Create a positioning context */
+  /* Optional: Align elements side by side */
+  align-items: center; /* Vertically center the icon */
+  max-width: 450px;
+}
+
+.field-signup input {
+  width: 100%; /* Make input take full width of the parent */
+  padding-right: 40px; /* Add right padding to avoid overlapping with the icon */
+  padding-left: 10px; /* Optional: Add padding for input text */
+  height: 40px; /* Adjust input height */
+  font-size: 22px; /* Adjust input font size */
+  margin-top: 50px;
+  flex-direction: column;
+  color: white;
+}
+
+.field-signup input:-webkit-autofill {
+  background-color: blue !important;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+  font-size: 22px;
+}
+
+.field-signup input:invalid {
+    border-color: red;
+}
+
+.field-signup .icon-btn {
+  position: absolute; /* Position relative to the container */
+  left: 100%; /* Align to the right end of the input */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for proper vertical centering */
+  background: none; /* Remove any background */
+  color: white; /* Set icon color */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  padding: 5px; /* Optional: Add padding around the icon */
+  font-size: 15px; /* Adjust font size for the icon */
+}
+
+
+.submit-button {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    font-size: 20px ;
+    font-weight: bold;
+    color: white;
+    background-color: grey;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 40px;
+}
+
+.submit-button:hover {
+    background-color: #1ab1188;
+    transform: scale(1.05)
+}
